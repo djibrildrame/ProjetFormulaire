@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+head{}
+
+
+body{
+    background:url(/fond.jpg) center/cover;height: 100vh; 
+}
+
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 3rem;
+color: rgb(251, 241, 241);
+text-shadow: 5px 0 0 rgb(0, 0, 0);
+text-align: center;
+font-family: 'Anton', sans-serif;
+}
+ 
+.main {
+    background: rgb(255, 245, 245);
+    width: 90%;
+    min-height: 500px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow:  0 15px 15px 15px rgba(7, 6, 6, 0.837);
+    background-color: rgba(43, 14, 168, 0.973);
+    border: 2px solid white;
+   
+    
+}
+
+.positioning
+{
+background-color: red;
+ padding: 10px;
+ margin-top: 30px;
+ border-radius: 20px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+margin-bottom: 40px;
+border: 1px solid white;
+
+}
+
+h2{ 
+    margin: 0%;
+}
+
+#circle {
+    height: 30%;
+    width: 30%;
+    background: skyblue;
+}
+
+#rectangle {
+    height: 30%;
+    width: 30%;
+    background: violet;
+
+}
+.image-messi{
+height: 30%;
+width: 500px;
+text-align: left;
+margin-top: 20px;
+object-fit: cover;
+}
+.légende-Messi {
+    bottom: 30%;
+margin-bottom: 0px;
+    padding: auto;
+    color: red;
+    font-size: 1cm;
+
+}
+
+   
+    .site {
+        font-family: 'Cairo', sans-serif;
+        margin-bottom: 40px;
+        text-align: center;
+
+
+    }
+
+    .text{
+
+font-family:'Anton', sans-serif;
+margin-top: 30px;
+
+    }
+.titre {
+    margin-bottom: -0,9cm;
+  margin-top: -1cm;
+}
+
+.paris {
+   font-family:  'Anton', sans-serif;
+   letter-spacing: 3px;
+   margin-bottom: 30px;
+   text-align: center;
+   margin-top: 1cm;
+
+}
+
+.incroyable {
+    text-align: center;
+    margin-top: 1cm;
+}
+.body {
+
+    margin-bottom: 2cm;
+}
+
+
+/* site à rejoindre */
+.moi {
+ text-align: center;
+ padding: 10px;
+color: aqua;
+border: 2px solid aqua;
+border-radius: 12px;
+
+
+}
+
+.ul {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+ flex-wrap: wrap;
+padding: 0px;
+margin-top: 2cm;
+
+}
+   
+
+.lien{
+  height: 100px;
+  width: 100%;
+  margin-top: -40px;
+}
+  
+.légende-Messi { 
+
+margin-top: 2cm;
+
+}
+
+
+
+
+.logo{
+   height: 6cm;
+
+   
+}
+
+.grid {
+
+display: grid;
+grid-template-columns: 30% 70%;
+border: 6px solid white;
+}
+
+.inscription {
+
+    display: grid;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.submit {
+    background-color: red;
+    font-size: 17px;
+    font-family:'Anton', sans-serif;
+}
+
+.box{
+    text-align: center;
+}
+
+.merci {
+    visibility: hidden;
+}
+
+.Condition{
+     margin-left: 24%;
+     margin-top: 205px;
+     position: absolute;
+}
