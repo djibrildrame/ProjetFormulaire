@@ -1,10 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
-head{}
+
+body {
+  font-family: raleway;
+background-color: black;
+margin-left: 1%;
+margin-right: 1%;
 
 
-body{
-    background:url(/fond.jpg) center/cover;height: 100vh; 
+}
+
+a{
+    text-decoration: none;
+}
+
+.tete {
+  
+    margin-left: 2%;
+}
+ header{
+    margin-top: 20Px;
+    
+ }
+
+ .blanc {
+    color: white;
+ }
+
+ .rouge{
+    color: red;
+    margin-left: 1%;
+    margin-top: -0px;
+   position: absolute;
+ }
+
+ .search {
+border: 2Px solid blue;
+background-color: blue;
+padding: 7px;
+padding-left: 20px;
+border-radius: 10px;
+margin-left: 75%;
+margin-top: -55px;
+position: absolute;
+
+ }
+
+
+
+.fa-magnifying-glass {
+    color: white;
+   font-size: 20px;
+   margin-left: 89%;
+   margin-top: -47px;
+   position:absolute;
+ 
+   
 }
 
 
@@ -17,20 +68,84 @@ text-shadow: 5px 0 0 rgb(0, 0, 0);
 text-align: center;
 font-family: 'Anton', sans-serif;
 }
- 
-.main {
-    background: rgb(255, 245, 245);
-    width: 90%;
-    min-height: 500px;
-    margin: 0 auto;
-    padding: 15px;
-    border-radius: 15px;
-    box-shadow:  0 15px 15px 15px rgba(7, 6, 6, 0.837);
-    background-color: rgba(43, 14, 168, 0.973);
-    border: 2px solid white;
-   
+
+.carousel {
+height: 50vh;
+position: relative;
+margin-top: 50px;
+}
+
+.carousel img {
+    height:500px ;
+    width: 1270px;
+
+}
+
+ .banner {
+    object-fit: cover;
+     height: 100%;
+     width: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+     opacity: 0;
+     
+}
+
+.banner .active {
+opacity: 1;
+
+}
+
+
+.para {
+    font-size: 50px;
+    position: relative;
+    text-align: center;
+    font-weight: bolder;
+    color:yellow;
+    text-shadow: 2px 2px black;
+    margin-top:-350px;
+    letter-spacing:5px ;
     
 }
+
+.phrase {
+    font-size: 23px;
+  
+}
+
+.text{
+    position:relative;
+    margin-top:200px;
+    font-size: 20px;
+   
+}
+
+
+
+.dots{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -170px;
+   
+}
+ 
+.arrowg {
+    color: blue;
+    margin-left: 2%;
+    margin-top: 143px;
+}
+
+
+.arrowd {
+    color: blue;
+    margin-right: 2%;
+    margin-top: 143px;
+}
+
+
 
 .positioning
 {
@@ -88,12 +203,18 @@ margin-bottom: 0px;
     .text{
 
 font-family:'Anton', sans-serif;
-margin-top: 30px;
+margin-top: 70px;
+letter-spacing: 3px;
 
     }
 .titre {
-    margin-bottom: -0,9cm;
-  margin-top: -1cm;
+    
+  margin-top: -85px;
+  margin-left: 8%;
+  font-size: 25px;
+  text-align: left;
+  text-decoration: none;
+  color: blue;
 }
 
 .paris {
@@ -106,8 +227,10 @@ margin-top: 30px;
 }
 
 .incroyable {
-    text-align: center;
-    margin-top: 1cm;
+    text-align: left;
+    margin-top: 0px;
+    text-decoration: none;
+
 }
 .body {
 
@@ -116,78 +239,343 @@ margin-top: 30px;
 
 
 /* site à rejoindre */
-.moi {
- text-align: center;
- padding: 10px;
-color: aqua;
-border: 2px solid aqua;
-border-radius: 12px;
 
-
-}
 
 .ul {
  display: flex;
  flex-direction: row;
  justify-content: space-evenly;
  flex-wrap: wrap;
-padding: 0px;
-margin-top: 2cm;
+
+margin-top: 4cm;
 
 }
    
+
+
 
 .lien{
-  height: 100px;
-  width: 100%;
+  height: 70px;
+  width: 50%;
   margin-top: -40px;
+  padding: 0px;
+  border-radius: 30px;
+  border: 2px solid red;
+  padding-right: 170px;
+  object-fit: cover;
+
 }
+
+.logoyoutube {
+    margin-right: 54%;
+    margin-top: -20px;
+    position: absolute;
+    color: yellow;
+    font-size: 30px;   
+    text-shadow: 1px 1px blue;
+   
+}
+.logotiktok {
+    margin-left:2% ;
+    margin-top: -20px;
+    position: absolute;
+    color: yellow;
+    font-size: 30px;   
+    text-shadow: 1px 1px blue;
+   
+}
+.logoinsta {
+    margin-left:68% ;
+    margin-top: -20px;
+    position: absolute;
+    color: yellow;
+    font-size: 30px;   
+    text-shadow: 1px 1px blue;
+   
+}
+
+
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    object-fit: cover;
+    margin-top: 50px;
   
-.légende-Messi { 
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: none;
+    
+  }
+  
+  .slide.active {
+    opacity: 1;
+    display: block;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .navigation {
+    position: relative;
+    bottom: 30px;
+    margin-left: 50%;
+    margin-right: -137%;
+    margin-top: 40px;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .prev-btn, .next-btn {
+    font-size: 2em;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .prev-btn:hover, .next-btn:hover {
+    background-color: #ccc;
+  }
 
-margin-top: 2cm;
+ .bullet {
+    background-color: white;
+    border-radius: 100%;
+    border: 2px solid red;
+    padding: 7px;
+    margin-left: -50%;
+    margin-right: -50%;
+
+ }
+
+ .bullets-container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 47%;
+    margin-right: 47%;
+    margin-top: -30px;
+    
+ }
+
+ .bullet:hover {
+   background-color: blue;
+ }
+
+ .principal {
+    margin-top: 10%;
+    position: absolute;
+ }
+/*image principal */
+.Mbappe {
+    margin-top: 5px;
+    height: 63%;
+    width: 66%;
+    object-fit: cover;
+    margin-left: 5%;
+   
+}
+
+h4 {
+    color: white;
+    font-size: 40px;
+    margin-left: 2%;
+  
+}
+
+p{
+    color: white;
+    font-size: 16px;
+}
+
+h3{
+    font-size: 30px;
+    color: yellow;
+    margin-top: 70px;
+    margin-left: 30px;
+}
+
+.principal{
+    margin-top: -40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.detailmbappe {
+margin-top: 200px;
+margin-left: 4%;
+margin-right: 3%;
+
+}
+
+.afficher {
+    margin-left: 65%;
+    margin-top: 31.3%;
+    font-size: 17px;
+}
+
+.mbappepage {
+ margin-top: 100px;
+ margin-left:4% ;
+ margin-right:2% ;
+}
+
+.page {
+    height: 30%;
+    width: 60%;
+    margin-left: 30px;
+}
+
+.soustitre {
+    margin-right: 77%;
+    font-size: 21px;
 
 }
 
 
+footer{
+    margin-top: 20%;
+    margin-left: 30%;
+}
+ 
+.rubrique {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 80px;
+}
 
 
-.logo{
-   height: 6cm;
+
+.messi {
+ 
+    height: 110%;
+    width: 56%;
+    border-radius: 10%;
+    padding-bottom: 7%;
+    border-bottom: 40px;
+    border: 2px solid blue;
+    margin-left: 2%;
+   
+}
+.galtier {
+    
+    height: 109%;
+    width: 137%;
+    border-radius: 10%;
+    padding-bottom: 17%;
+    border-bottom: 40px;
+    border: 2px solid blue;
+    margin-left: -70%;
+
+}
+
+.nasser {
+    height: 108%;
+    width: 95%;
+    border-radius:10%;
+    padding-bottom: 12%;
+    border-bottom: 40px;
+    border: 2px solid blue;
+    margin-left: -0%;
+}
+
+.textmessi {
+    font-size: 21px;
+    position: relative;
+    margin-top: -40px;
+    margin-left: 8%;
+    margin-right: 8%;
+
+}
+.textgaltier {
+    
+    font-size: 21px;
+    margin-top: -40px;
+    margin-left: -58%;
+    margin-right: 8%;
+
+}
+.textnasser{
+   
+    font-size: 21px;
+    margin-top: -40px;
+    margin-left: 12%;
 
    
 }
 
-.grid {
-
-display: grid;
-grid-template-columns: 30% 70%;
-border: 6px solid white;
+.autre {
+    margin-top: 54%;
 }
 
-.inscription {
-
-    display: grid;
-    flex-direction: column;
-    padding: 5px;
+.pagetext {
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
-.submit {
-    background-color: red;
-    font-size: 17px;
-    font-family:'Anton', sans-serif;
+header{
+    top: 0;
+    position: fixed;
+  margin-top: 0px;
+  z-index: 1000;
+  transition: 0.3s ease;
+background:linear-gradient(45deg,violet, blue) ;
+
 }
 
-.box{
-    text-align: center;
+
+.contact {
+    margin-left:20px ;
+}
+.accueil{
+    margin-right:20px ;
 }
 
-.merci {
-    visibility: hidden;
+nav{
+        margin-left: 25cm;
+        margin-top: -4%;
+        font-size: 20px;
+        position: block;
 }
 
-.Condition{
-     margin-left: 24%;
-     margin-top: 205px;
-     position: absolute;
+.abonner{
+    font-size: 20px;
+    color: blue;
+    margin-top: 172px;
+    border: 2px solid blue;
+    padding: 30px;
+    border-radius: 20px;
+    margin-right: 50%;
+    background: linear-gradient(45deg,yellow, orange);
+    opacity: 0;
+   transition: 2s ease-out;
+ 
 }
+
+.index{
+    color: white;
+    
+}
+
+.index:hover {
+    color: red;
+    transition: 1s;
+    border-top: 2px solid red;
+
+}
+
