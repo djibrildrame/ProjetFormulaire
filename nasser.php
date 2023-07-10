@@ -39,6 +39,10 @@
         </p>
     </div>
     <script src="page.js"></script>
-    <?php include('footer.php') ?>
+    <footer>
+        <p>
+            <strong>© INCROYABLEMENT PARISIEN</strong> - <em>Tous droits réservés</em>
+        </p>
+    </footer>
 
     </html>

@@ -2,7 +2,7 @@ prenom = prompt("Comment vous vous nommez ?");
 var psg = prompt("Quel note donneriez vous cette saison pour le psg ?");
 
 alert(
-  "Vous vous appelez  " + prenom + " et vous avez donné comme note : " + psg
+  "Vous vous appelez  " + prenom + " et vous avez donnÃ© comme note : " + psg
 );
 
 if (psg > 0 && psg < 5) {
@@ -12,11 +12,11 @@ if (psg > 0 && psg < 5) {
   alert("Très moyen");
 }
 if (psg === 10) {
-  alert("très juste");
+  alert("trÃ¨s juste");
 } else if (psg > 10 && psg < 15) {
   alert("bon");
 } else if (psg > 15 && psg < 17) {
-  alert("très bien");
+  alert("trÃ¨s bien");
 } else if (psg > 17 && psg < 20) {
   alert("Excellent");
 }
@@ -70,29 +70,33 @@ bullets.forEach((bulle, i) => {
     sliderNar(i);
   });
 });
+let lastscroll = 0;
 // formule pour faire descendre navbar
-document.addEventListener("scroll", () => {
-  const tete = document.querySelector(".head");
-  if (window.scrollY > 150) {
-    /* tete.style.background = linear - gradient(violet, blue);
-    tete.style.transition = 2;
-    tete.style.Height = "45px";*/
+const tete = document.querySelector(".entete");
+const titre = document.querySelector(".titre");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY < lastscroll) {
+    tete.style.background = "black";
+    tete.style.height = "65px";
+    titre.style.background = "";
   } else {
-    /*tete.style.background = black;
-    tete.style.Height = "90px";*/
+    tete.style.background = "black";
+    tete.style.height = "65px";
   }
+
+  lastscroll = window.scrollY;
 
   // Pour savoir nombre de pixel que fais le site internet en height il suffit de faire "console.log(document.body.offsetHeight)""
   let scrollvalue =
     (window.scrollY + window.innerHeight) / document.body.offsetHeight;
 
   //image
-  console.log(scrollvalue);
+
   //Popup
   if (scrollvalue > 0.89) {
     abonner.style.opacity = 1;
     abonner.style.transform = "translateX(600px)";
   }
 });
-
-let abonner = document.querySelector(".abonner");
+const abonner = document.querySelector(".abonner");

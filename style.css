@@ -20,6 +20,7 @@ a{
 }
  header{
     margin-top: 20Px;
+    background-color: aqua;
     
  }
 
@@ -210,7 +211,7 @@ letter-spacing: 3px;
 .titre {
     
   margin-top: -85px;
-  margin-left: 8%;
+  margin-left: 7%;
   font-size: 25px;
   text-align: left;
   text-decoration: none;
@@ -230,7 +231,7 @@ letter-spacing: 3px;
     text-align: left;
     margin-top: 0px;
     text-decoration: none;
-
+    
 }
 .body {
 
@@ -528,15 +529,6 @@ footer{
     margin-right: 2%;
 }
 
-header{
-    top: 0;
-    position: fixed;
-  margin-top: 0px;
-  z-index: 1000;
-  transition: 0.3s ease;
-background:linear-gradient(45deg,violet, blue) ;
-
-}
 
 
 .contact {
@@ -579,3 +571,14 @@ nav{
 
 }
 
+.entete{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 90px;
+}
+
+.incro{
+    margin-top: -10px;
+}
