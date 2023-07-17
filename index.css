@@ -1,0 +1,96 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+        background: url('/71164183-fond-bleu-ciel-site-web-conception-abstraite-de-fond-d-écran\ \(1\).webp') center/cover no-repeat;
+      
+}
+
+.tete{
+    margin-left: 44%;
+    font-size: 40px;
+    color: azure;
+}
+
+.titre {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    color: red;
+    margin-top: -60px;
+}
+
+.Formulaire{
+
+margin-left: 40%;
+margin-right: 35%;
+margin-top: 6%;
+ border: 3px solid aqua;
+border-radius: 20px;
+padding: 20px;
+display:flex ;
+flex-direction: column;
+justify-content: center;
+}
+
+.submit{
+    background-color: aqua;
+    margin-top: 20px;
+    
+}
+
+input{
+    height: 30px;
+    width: 100%;
+}
+
+span{
+ 
+    color: red;
+}
+
+label{
+    margin-top: 20px;
+    display: flex;
+}
+
+.progressbar {
+    height: 10px;
+    background: red;
+    width: 0;
+    visibility: visible;
+}
+
+.progressred{
+    background: red;
+    width: 33%;
+    visibility: visible;
+  
+}
+.progressblue{
+    background: #16d9e7;
+    width: 67%;
+    visibility: visible;
+}
+.progressgreen{
+    background: #5ef9a4;
+    width: 100%;
+    visibility: visible;
+}
+
+.error input {
+    color: red;
+    
+}
+.error span {
+    color: red;
+   
+}
+.change  {
+    color: #16d9e7;
+   
+}
+.change1  {
+    color: #5ef9a4;
+   
+}
+
