@@ -111,8 +111,26 @@ form.addEventListener("submit", (e) => {
       password: password,
     };
     console.log(data);
+
+    inputs.forEach((input) => (input.value = ""));
+    progressBar.classList = "";
+    pourcentage.style.opacity = 0;
+
+    pseudo = null;
+    email = null;
+    password = null;
+    confirmPass = null;
     alert("Inscription Validée");
   } else {
     alert("Veuillez remplir correctement les champs");
   }
 });
+
+setInterval(() => {
+  const r = Math.floor(Math.random() * 255);
+  const g = Math.floor(Math.random() * 255);
+  const b = Math.floor(Math.random() * 255);
+
+  const color = `rgb(${r},${g},${b})`;
+  document.body.style.background = color;
+}, 1000);
